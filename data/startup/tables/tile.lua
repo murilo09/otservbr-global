@@ -1061,13 +1061,7 @@ TileAction = {
 			{x = 31951, y = 32174, z = 10}
 		}
 	},
-	-- The New Frontier Quest
-	[50364] = { -- Mission 07 - Hidden Note
-		itemId = false,
-		itemPos = {
-			{x = 33165, y = 31249, z = 11}
-		}
-	},
+	-- Troll Sabotage Quest
 	[50365] = {
 		itemId = false,
 		itemPos = {
@@ -1078,38 +1072,10 @@ TileAction = {
 			{x = 33231, y = 31762, z = 2},
 			{x = 33231, y = 31760, z = 2}
 		}
-	},
-	[50366] = { -- Corruption Hole
-		itemId = false,
-		itemPos = {
-			{x = 33345, y = 31116, z = 7}
-		}
 	}
 }
 
 TileUnique = {
-	-- Lions rock tiles
-	-- data\scripts\movements\quests\lions_rock\lionsrock.lua
-	-- snake sign
-	[25001] = {
-		itemId = 499,
-		itemPos = {x = 33095, y = 32244, z = 9}
-	},
-	-- lizard sign
-	[25002] = {
-		itemId = 499,
-		itemPos = {x = 33128, y = 32300, z = 9}
-	},
-	-- scorpion sign
-	[25003] = {
-		itemId = 499,
-		itemPos = {x = 33109, y = 32329, z = 9}
-	},
-	-- hyena sign
-	[25004] = {
-		itemId = 499,
-		itemPos = {x = 33127, y = 32340, z = 9}
-	},
 	-- Lions rock quest (gems tile) scripts/actions/other/gems
 	[25006] = {
 		itemId = 21441,

@@ -139,6 +139,7 @@ Storage = {
 	FreeQuests = 30057,
 	PremiumAccount = 30058,
 	BattleAxeQuest = 30059,
+	ShrineEntrance = 30060,
 
 	--[[
 	Old storages
@@ -217,7 +218,7 @@ Storage = {
 		UrmahlulluTimer = 50042
 	},
 	TheSecretLibrary = {
-		-- Reserved storage from 50050 - 50069
+		-- Reserved storage from 50050 - 50074
 		TheOrderOfTheFalcon = {
 			OberonTimer = 50050
 		},
@@ -233,14 +234,28 @@ Storage = {
 		PinkTel = 50060,
 		Peacock = 50061,
 		HighDry = 50062,
-		FalconBastionAccess = 50063
+		FalconBastionAccess = 50063,
+		FalconBastionChestsTimer = {
+			Key0909 = 50064
+		},
+		MiniBosses = {
+			GrandCommanderSoeren = 50065,
+			PreceptorLazare = 50066,
+			GrandChaplainGaunder = 50067,
+			GrandCanonDominus = 50068,
+			DazedLeafGolem = 50069
+		},
+		LowerBastionAccess = 50070,
+		UndergroundBastionAccess = 50071,
+		OberonAccess = 50072,
+		ShortcutToBastion = 50073
 	},
 	DeeplingBosses = {
-		-- Reserved storage from 50070 - 50079
-		Jaul = 50070,
-		Tanjis = 50071,
-		Obujos = 50072,
-		DeeplingStatus = 50073
+		-- Reserved storage from 50075 - 50079
+		Jaul = 50075,
+		Tanjis = 50076,
+		Obujos = 50077,
+		DeeplingStatus = 50078
 	},
 	DangerousDepths = {
 		-- Reserved storage from 50080 - 50199
@@ -531,7 +546,8 @@ Storage = {
 		Chalice = 50505,
 		Tomes = 50506,
 		BabyDragon = 50507,
-		SpiderWeb = 50508
+		SpiderWeb = 50508,
+		LloydEvent = 50509
 	},
 	SweetyCyclops = {
 		-- Reserved storage from 50520 - 50529
@@ -667,7 +683,8 @@ Storage = {
 		DoorGoldenFruits = 50706,
 		BossWarzone1 = 50707,
 		BossWarzone2 = 50708,
-		BossWarzone3 = 50709
+		BossWarzone3 = 50709,
+		GnomedixMsg = 50710
 	},
 	TheirMastersVoice = {
 		-- Reserved storage from 50720 - 50739
@@ -1666,15 +1683,19 @@ Storage = {
 	LionsRock = {
 		-- Reserved storage from 52290 - 52309
 		Questline = 52290,
-		LionsStrength = 52291,
-		LionsBeauty = 52292,
-		LionsTears = 52293,
-		GetLionsMane = 52294,
-		GetHolyWater = 52295,
-		SnakeSign = 52296,
-		LizardSign = 52297,
-		ScorpionSign = 52298,
-		HyenaSign = 52299,
+		OuterSanctum = {
+			Skeleton = 52291,
+			LionsStrength = 52292,
+			LionsBeauty = 52293,
+			LionsTears = 52294,
+		},
+		InnerSanctum = {
+			SnakeSign = 52295,
+			LizardSign = 52296,
+			ScorpionSign = 52297,
+			HyenaSign = 52298,
+			Message = 52299
+		},
 		Time = 52300
 	},
 	GraveDanger = {
@@ -1717,6 +1738,8 @@ Storage = {
 	Quest = {
 		Key = {
 			ID0010 = 103,
+			ID0808 = 808,
+			ID0909 = 909,
 			ID3001 = 3001,
 			ID3002 = 3002,
 			ID3003 = 3003,
@@ -1726,6 +1749,7 @@ Storage = {
 			ID3007 = 3007,
 			ID3008 = 3008,
 			ID3012 = 3012,
+			ID3600 = 3600,
 			ID3620 = 3620,
 			ID3666 = 3666,
 			ID3702 = 3702,
@@ -2319,52 +2343,57 @@ Storage = {
 			TreasureHunt = {},
 		},
 		U8_54 = { -- update 8.54 - Reserved Storages 42551 - 42950
-				AnUneasyAlliance = {
+			AnUneasyAlliance = {
 				Questline = 42551,
 				QuestDoor = 42552}, -- 42551 - 42600
-				ChildrenOfTheRevolution = {}, -- 42601 - 42650
-				SeaOfLight = {}, -- 42651 - 42700
-				TheNewFrontier = { -- 42701 - 42750
-					Questline = 42701,
-					FarmineFirstTravel = 42702,
-					Mission01 = 42703,
-					Mission02 = {42704,
-						Beaver1 = 42705,
-						Beaver2 = 42706,
-						Beaver3 = 42707,
-						},
-					Mission03 = 42708,
-					Mission04 = 42709,
-					Mission05 = {42710,
-						KingTibianus = 42711,
-						Leeland = 42712,
-						Angus = 42713,
-						Wyrdin = 42714,
-						Telas = 42715,
-						Humgolf = 42716,
-						},
-					Mission06 = 42717,
-					Mission07 = {42718,
-						HiddenNote = 42719,
-						},
-					Mission08 = 42720,
-					Mission09 = {42721,
-						ArenaDoor = 42722,
-						RewardDoor = 42723,
-						},
-					Mission10 = {42724,
-						MagicCarpetDoor = 42725,
-						},
-					Reward = {
-						Potions = 42726,
-						GoldIngot = 42727,
-						PigBank = 42728
-					},
-					TomeofKnowledge = 42729,
-					ZaoPalaceDoors = 42730, -- 10th Tome: Zao Palace
-					SnakeHeadTeleport = 42731, -- 7th Tome: Snake Head Teleport
-					CorruptionHole = 42732 -- 8th Tome: Corruption Hole
+			ChildrenOfTheRevolution = {}, -- 42601 - 42650
+			SeaOfLight = {}, -- 42651 - 42700
+			TheNewFrontier = { -- 42701 - 42750
+				Questline = 42701,
+				FarmineFirstTravel = 42702,
+				Mission01 = 42703,
+				Mission02 = {42704,
+					Beaver1 = 42705,
+					Beaver2 = 42706,
+					Beaver3 = 42707,
 				},
+				Mission03 = 42708,
+				Mission04 = 42709,
+				Mission05 = {42710,
+					KingTibianus = 42711,
+					Leeland = 42712,
+					Angus = 42713,
+					Wyrdin = 42714,
+					Telas = 42715,
+					Humgolf = 42716,
+					LeelandKeyword = 42841,
+					AngusKeyword = 42842,
+					WyrdinKeyword = 42843,
+					TelasKeyword = 42844,
+					HumgolfKeyword = 42845,
+				},
+				Mission06 = 42717,
+				Mission07 = {42718,
+					HiddenNote = 42719,
+				},
+				Mission08 = 42720,
+				Mission09 = {42721,
+					ArenaDoor = 42722,
+					RewardDoor = 42723,
+				},
+				Mission10 = {42724,
+					MagicCarpetDoor = 42725,
+				},
+				Reward = {
+					Potions = 42726,
+					GoldIngot = 42727,
+					PigBank = 42728
+				},
+				TomeofKnowledge = 42729,
+				ZaoPalaceDoors = 42730, -- 10th Tome: Zao Palace
+				SnakeHeadTeleport = 42731, -- 7th Tome: Snake Head Teleport
+				CorruptionHole = 42732 -- 8th Tome: Corruption Hole
+			},
 			TomesOfKnowledge = {
 				OrcCamp = 42751,
 				TheNewFrontier = 42752,
@@ -2633,7 +2662,16 @@ Storage = {
 			BattleMageOutfits = {},
 			DiscovererOutfits = {},
 			MeasuringTibia = {},
-			TheSecretLibrary = {},
+			TheSecretLibrary = {
+				FalconBastionChestsTimer = {
+					Coast = 46281,
+					Island = 46282,
+					ThroneHall = 46283,
+					Shortcut = 46284,
+					LowerBastion = 46285,
+					UndergroundBastion = 46286
+				},
+			},
 		},
 		U12_00 = { -- update 12.00 - Reserved Storages 46301 - 46600
 			DreamWarriorOutfits = {},
